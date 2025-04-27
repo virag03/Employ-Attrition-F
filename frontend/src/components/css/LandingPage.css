@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply font-sans antialiased text-gray-800 bg-gray-50;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation for hover effects */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00ABE4] to-[#0083B0];
+}
+
+/* Custom button animations */
+.button-hover {
+  @apply transform transition hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition transform hover:scale-[1.02] hover:shadow-lg;
+}
+
+/* Hero section background */
+.hero-bg {
+  background: linear-gradient(135deg, #00ABE4 0%, #0083B0 100%);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#00ABE4] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#0083B0];
+}

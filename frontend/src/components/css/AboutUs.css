@@ -1,0 +1,82 @@
+/* AboutUs.css */
+.about-us {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-container {
+    max-width: 800px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0077cc;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.values, .team, .contact {
+    margin-bottom: 30px;
+}
+
+.values h2, .team h2, .contact h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.values ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.values ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.values ul li::before {
+    content: '✔️';
+    color: #0077cc;
+    margin-right: 10px;
+}
+
+.contact a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .values h2, .team h2, .contact h2 {
+        font-size: 1.5rem;
+    }
+}

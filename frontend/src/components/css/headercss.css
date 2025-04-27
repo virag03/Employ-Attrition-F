@@ -1,0 +1,57 @@
+.headmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+
+}
+
+.mainhead{
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9F1FA;
+    width: 70vw;
+    border-radius: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    height:60px;
+
+}
+
+.rhead{
+    
+    width: 120px;
+    height:100px;
+    overflow: hidden;
+   
+    
+}
+.imagelogo{
+    height:100px;
+
+}
+
+.lhead{
+    display: flex;
+    padding:20px;
+    /* background-color: black; */
+}
+
+.lhead>*{
+     padding:0px 0px 0px 20px;
+     margin:5px;
+}
+
+.lhead>*:hover{
+    color:green;
+    transform:scale(1.1);
+    cursor:pointer
+}
+
+.lhead>*:active{
+    color:red;
+    cursor:pointer
+}
+
